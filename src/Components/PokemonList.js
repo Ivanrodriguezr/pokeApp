@@ -1,23 +1,25 @@
-import React from "react";
+import React, {  } from "react";
 import styled from "styled-components";
+import PokemonImage from "./PokemonImage";
 import PokemonItem from "./PokemonItem";
 
+
 const PokemonList = () => {
+
+    const list = [{ id: 1, name: "charmander"}, { id: 2, name: "pikachu"}, { id: 3, name: "onix"},
+{ id:4, name:"bulbasaur"}, { id:5, name:"charizard"}, { id:6, name:"mew"}]
+
     return(
+        <>
         <Container>
-            <PokemonItem pokemonName="Pikachu"/>
-            <PokemonItem pokemonName="Raichu"/>
-            <PokemonItem pokemonName="Bulbasaur"/>
-            <PokemonItem pokemonName="Pikachu"/>
-            <PokemonItem pokemonName="Raichu"/>
-            <PokemonItem pokemonName="Bulbasaur"/>
-            <PokemonItem pokemonName="Pikachu"/>
-            <PokemonItem pokemonName="Raichu"/>
-            <PokemonItem pokemonName="Bulbasaur"/>
-            <PokemonItem pokemonName="Pikachu"/>
-            <PokemonItem pokemonName="Raichu"/>
-            <PokemonItem pokemonName="Bulbasaur"/>           
+            {list.map((pokemon) => {
+                return(
+                    <PokemonItem pokemonName={pokemon.name} key={pokemon.id}>
+                    </PokemonItem>)
+            })}
+            
         </Container>
+        </>
     );
 };
 

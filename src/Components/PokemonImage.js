@@ -1,19 +1,23 @@
 import React from "react";
 import styled from 'styled-components';
-import pikachu from './../images/pikachu.jpg';
 
 
-const PokemonImage = () =>{
+
+const PokemonImage = (props) =>{
+
+    const namePokemon = "https://img.pokemondb.net/artwork/large/" + props.pokeName + ".jpg";
 
     return(
-        <Image src={pikachu}/>
+        <>
+        <Image src={namePokemon}/>
+        </>
     );
 
 }
 
 const Image = styled.img`
-    height: 260px;
-    width: 250px;
+    height: 240px;
+    width: 240px;
 `;
 
 

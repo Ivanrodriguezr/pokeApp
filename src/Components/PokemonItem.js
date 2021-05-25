@@ -19,9 +19,9 @@ const Item = (props) =>{
     return(
         <Container>
             <Card className={classes.root}>
-                <CardContent>
+                <CardContent>                 
                     {props.pokemonName}
-                    <PokemonImage/>
+                    <PokemonImage pokeName={props.pokemonName}/>
                 </CardContent>  
             </Card>
         </Container>
