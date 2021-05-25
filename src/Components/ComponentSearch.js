@@ -1,5 +1,5 @@
 import React from "react";
-import Buttom from '@material-ui/core/Button';
+import ComponentButtom from "./ComponentButtom";
 import ComponentTextField from "./ComponentTextField";
 
 
@@ -8,7 +8,7 @@ const ComponentSearch =() =>{
     return(
         <>  
             <ComponentTextField/>
-            <Buttom variant='contained' color='primary' size='medium'>GO!</Buttom>
+            <ComponentButtom/>
         </>
     );
 

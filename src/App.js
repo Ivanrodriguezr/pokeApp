@@ -1,14 +1,24 @@
 import React from "react";
-import Container from "./Components/Container";
+import PokemonList from "./Components/PokemonList";
 import ContainerOptions from "./Components/ContainerOptions";
+import styled from "styled-components";
+
 
 const App = () => {
+
   return (
-    <>
-    <ContainerOptions/>
-    <Container/>
-    </>
+    <ContainerApp>
+      <ContainerOptions/>
+      <PokemonList/>
+    </ContainerApp>
   );
 }
+
+const ContainerApp = styled.div`
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+`;
 
 export default App;
