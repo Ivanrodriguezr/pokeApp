@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import Card from '@material-ui/core/Card';
 import CardContent from '@material-ui/core/CardContent';
 import { makeStyles } from '@material-ui/core/styles';
+import PokemonImage from "./PokemonImage";
 
 const useStyles = makeStyles({
     root: {
@@ -20,6 +21,7 @@ const Item = (props) =>{
             <Card className={classes.root}>
                 <CardContent>
                     {props.pokemonName}
+                    <PokemonImage/>
                 </CardContent>  
             </Card>
         </Container>
@@ -33,5 +35,6 @@ const Container = styled.div`
     text-align: center;
     margin: 5px;
 `
+
 
 export default Item;
