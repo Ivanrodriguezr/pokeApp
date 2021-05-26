@@ -1,7 +1,7 @@
 import React, {  } from "react";
 import styled from "styled-components";
-import PokemonImage from "./PokemonImage";
 import PokemonItem from "./PokemonItem";
+
 
 
 const PokemonList = () => {
@@ -27,7 +27,7 @@ const Container = styled.div`
 
     display: flex;
     border-color:red;
-    margin: 100px;
+    margin: 55px;
     background-color: #3f51b5;
     justify-content: center;
     border-radius: 5px;
