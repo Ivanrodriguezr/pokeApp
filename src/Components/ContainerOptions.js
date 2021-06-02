@@ -13,8 +13,9 @@ const ContainerOptions = () =>{
 };
 
 const ContainerOptionsStyles = styled.div`
-    background-color: #eee;
+
     display: flex;
     justify-content: center;
+    width: 100%;
 `
 export default ContainerOptions;

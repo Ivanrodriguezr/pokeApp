@@ -8,7 +8,7 @@ const useStyle = makeStyles({
 
     TextFieldSearch:{
         marginLeft:'5px',
-        marginRight:'45px'       
+        marginRight:'25px'       
     }
 })
 
@@ -21,8 +21,8 @@ const ComponentTextField = () => {
         <TextField 
             label='Search it!!'
             className = {classes.TextFieldSearch}
+            id='text'
         >
-            Search
         </TextField> 
 
     )

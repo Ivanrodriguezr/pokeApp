@@ -1,6 +1,8 @@
 import React from "react";
 import ComponentButtom from "./ComponentButtom";
 import ComponentTextField from "./ComponentTextField";
+import ComponentClean from "./ComponentClean";
+
 
 
 const ComponentSearch =() =>{
@@ -9,6 +11,7 @@ const ComponentSearch =() =>{
         <>  
             <ComponentTextField/>
             <ComponentButtom/>
+            <ComponentClean/>
         </>
     );
 

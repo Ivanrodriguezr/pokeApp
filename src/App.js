@@ -9,7 +9,7 @@ const App = () => {
   return (
     <ContainerApp>
       <ComponentHeader/>
-      <ContainerOptions/>
+            <ContainerOptions/>
       <PokemonList/>
     </ContainerApp>
   );
@@ -21,5 +21,7 @@ const ContainerApp = styled.div`
     justify-content: center;
     align-items: center;
 `;
+
+
 
 export default App;
